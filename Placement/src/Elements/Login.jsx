@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 export default function Login() {
     return (
         <div id="main">
@@ -14,9 +15,12 @@ export default function Login() {
             </label>
            <input type="text"></input>
            </div>
+           <NavLink
+           to="/CompanyO">
            <button>
                 Login
            </button>
+           </NavLink>
         
     </div>);
 }
