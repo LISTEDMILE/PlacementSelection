@@ -8,8 +8,8 @@ export default function Choose() {
             
 <NavLink
                                 to="/dataa"
-                                    className={(isActive) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-500" : "text-grey-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    className={() =>
+                                        `block py-2 pr-4 pl-3 duration-200 text-orange-200 focus:'text-white'  border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                    Data
@@ -18,7 +18,7 @@ export default function Choose() {
                                 <NavLink
                                 to="/requestt"
                                     className={(isActive) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-500" : "text-grey-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 text-orange-200 focus:'text-white' border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Request
@@ -27,10 +27,10 @@ export default function Choose() {
                                 <NavLink
                                 to="/company"
                                     className={(isActive) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-500" : "text-grey-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 text-orange-200 focus:'text-white' border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
-                                   Company
+                                   Job Search
                                 </NavLink>
                             
                                 
