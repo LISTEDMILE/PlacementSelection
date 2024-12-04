@@ -1,8 +1,14 @@
 import React from 'react'
 export default function Contact() {
     return (
-        <div>
-           dfgd
-        </div>
+        <div className='flex-col justify-items-center '>
+           <h1 className='text-4xl mb-14'>
+            Facing any problem....Don't worry.........
+           </h1>
+           <p className='mb-8'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa temporibus libero pariatur, quia placeat debitis nostrum quas possimus perferendis accusamus voluptatum dolor praesentium nisi molestiae vel doloribus fugiat quis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequatur officia, molestiae voluptate porro placeat labore voluptas expedita. Facilis corporis enim quaerat. Nesciunt qui ducimus natus laudantium magnam? Consequatur, sapiente?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum delectus deleniti dignissimos cum quidem architecto eaque expedita, corrupti non fugiat nulla? Cum enim suscipit rerum! Sint consequatur debitis soluta nesciunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta in voluptatibus deleniti magni eveniet sunt aliquid, nesciunt a quo vero dolorem fugit, consequatur quas explicabo iusto totam architecto autem unde.</p>
+           <p className='mb-8'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa temporibus libero pariatur, quia placeat debitis nostrum quas possimus perferendis accusamus voluptatum dolor praesentium nisi molestiae vel doloribus fugiat quis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequatur officia, molestiae voluptate porro placeat labore voluptas expedita. Facilis corporis enim quaerat. Nesciunt qui ducimus natus laudantium magnam? Consequatur, sapiente?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum delectus deleniti dignissimos cum quidem architecto eaque expedita, corrupti non fugiat nulla? Cum enim suscipit rerum! Sint consequatur debitis soluta nesciunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta in voluptatibus deleniti magni eveniet sunt aliquid, nesciunt a quo vero dolorem fugit, consequatur quas explicabo iusto totam architecto autem unde.</p>
+           <p className='mb-8'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa temporibus libero pariatur, quia placeat debitis nostrum quas possimus perferendis accusamus voluptatum dolor praesentium nisi molestiae vel doloribus fugiat quis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequatur officia, molestiae voluptate porro placeat labore voluptas expedita. Facilis corporis enim quaerat. Nesciunt qui ducimus natus laudantium magnam? Consequatur, sapiente?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum delectus deleniti dignissimos cum quidem architecto eaque expedita, corrupti non fugiat nulla? Cum enim suscipit rerum! Sint consequatur debitis soluta nesciunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta in voluptatibus deleniti magni eveniet sunt aliquid, nesciunt a quo vero dolorem fugit, consequatur quas explicabo iusto totam architecto autem unde.</p>
+        
+           </div>
     );
 }
