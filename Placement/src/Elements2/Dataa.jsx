@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Choose from './Choose';
 import profile from './images/Profile.png'
 import { useState } from 'react';
 
 
 
- 
+
 
 export default function Dataa() {
     const [skills, setSkills] = useState([{id:Date.now,skill:""}])
+    const [infoName, setInfoName] = useState()
+    const [infoCourse, setInfoCourse] = useState()
+    const [infoEmail, setInfoEmail] = useState()
+    const [infoRollNo, setInfoRollNo] = useState()
+    const [infoGender, setInfoGender] = useState()
+    const [infoAddress, setInfoAddress] = useState()
+    const [infoDOB, setInfoDOB] = useState()
+
+    
     const addSkills =() => {
       setSkills((prev) => [...prev,{id:Date.now(), skill:""}])
     }
@@ -29,13 +38,13 @@ export default function Dataa() {
            
             <div class="ele2Main12" >
                 <img src={profile} className='h-36 mb-3'/>
-                <input placeholder='NAME' className='pl-2 mb-3'/>
-                <input type="number" placeholder='ROLL. NO.' className='pl-2 mb-3'/>
-                <input placeholder='Gender' className='pl-2 mb-3'/>
-                <input placeholder='Course' className='pl-2 mb-3'/>
-                <input placeholder='Date of Birth' className='pl-2 mb-3'/>
-                <input type="email" placeholder='Email' className='pl-2 mb-3'/>
-                <input placeholder='Address' className='pl-2 mb-3'/>
+                <input placeholder='NAME' onChange={(e)=> setInfoName(e.target.value)} value={infoName} className='pl-2 mb-3'/>
+                <input type="number" onChange={(e)=> setInfoRollNo(e.target.value)} value={infoRollNo} placeholder='ROLL. NO.' className='pl-2 mb-3'/>
+                <input placeholder='Gender' onChange={(e)=> setInfoGender(e.target.value)} value={infoGender} className='pl-2 mb-3'/>
+                <input placeholder='Course' onChange={(e)=> setInfoCourse(e.target.value)} value={infoCourse} className='pl-2 mb-3'/>
+                <input placeholder='Date of Birth' onChange={(e)=> setInfoDOB(e.target.value)} value={infoDOB} className='pl-2 mb-3'/>
+                <input type="email" placeholder='Email' onChange={(e)=> setInfoEmail(e.target.value)} value={infoEmail} className='pl-2 mb-3'/>
+                <input placeholder='Address' onChange={(e)=> setInfoAddress(e.target.value)} value={infoAddress} className='pl-2 mb-3'/>
 
             </div>
             <div class="ele2Main12">

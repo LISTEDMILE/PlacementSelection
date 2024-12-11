@@ -62,13 +62,14 @@
         z-index: 2;
         position:fixed;
         top:80px;
-        left:40px;
+        left:20px;
         padding:20px;
         background-color: rgb(10, 122, 150);
         border:2px solid black;
         border-radius: 8px;
        
         display: flex;
+        
         justify-content: space-around;
  
         flex-direction: column;
