@@ -14,6 +14,4 @@ import CompanyO from "../Element3/CompanyO";
 import RequesttO from "../Element3/RequesttO";
 import DataaO from "../Element3/DataaO";
 
-
-
 export { Header, ChooseO, CompanyO, RequesttO, DataaO, Footer, Home, Contact, About, Login, SignUp, Dataa, Company, Choose, Requestt}

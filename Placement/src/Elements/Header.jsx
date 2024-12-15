@@ -1,31 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link,NavLink} from 'react-router-dom'
+import { UserContext } from '../StuContext';
+import { useContext } from 'react';
 
-function ChangeR(){
-    document.getElementById('student').style.backgroundColor="white";
-    document.getElementById('student').style.color="black";
-    document.getElementById('student').style.border="white";
-    document.getElementById('student').style.textDecoration="underline";
-    document.getElementById('recruiter').style.backgroundColor="rgb(179, 106, 11)";
-    document.getElementById('recruiter').style.color="white";
-    document.getElementById('recruiter').style.border="2px solid black";
-    document.getElementById('recruiter').style.textDecoration="none";
-}
-function ChangeS(){
-    document.getElementById('recruiter').style.backgroundColor="white";
-    document.getElementById('recruiter').style.color="black";
-    document.getElementById('recruiter').style.border="white";
-    document.getElementById('recruiter').style.textDecoration="underline";
-    document.getElementById('student').style.backgroundColor="rgb(179, 106, 11)";
-    document.getElementById('student').style.color="white";
-    document.getElementById('student').style.border="2px solid black";
-    document.getElementById('student').style.textDecoration="none";
-}
+
 
 export default function Header() {
-   
-    
+    function ChangeR(){
+        document.getElementById('student').style.backgroundColor="white";
+        document.getElementById('student').style.color="black";
+        document.getElementById('student').style.border="white";
+        document.getElementById('student').style.textDecoration="underline";
+        document.getElementById('recruiter').style.backgroundColor="rgb(179, 106, 11)";
+        document.getElementById('recruiter').style.color="white";
+        document.getElementById('recruiter').style.border="2px solid black";
+        document.getElementById('recruiter').style.textDecoration="none";
+        setUser(2);
+       
+    }
+    function ChangeS(){
+        document.getElementById('recruiter').style.backgroundColor="white";
+        document.getElementById('recruiter').style.color="black";
+        document.getElementById('recruiter').style.border="white";
+        document.getElementById('recruiter').style.textDecoration="underline";
+        document.getElementById('student').style.backgroundColor="rgb(179, 106, 11)";
+        document.getElementById('student').style.color="white";
+        document.getElementById('student').style.border="2px solid black";
+        document.getElementById('student').style.textDecoration="none";
+        setUser(1);
+    }
+    const {user,setUser}= useContext(UserContext);
     return (
+
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 px-4 lg:px-10 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -39,8 +45,6 @@ export default function Header() {
                         Recruiter
                     </button>
                         </NavLink>
-                    
-             
                 </div> 
                       
                    <div className="flex items-center lg:order-2">
